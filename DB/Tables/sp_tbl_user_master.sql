@@ -14,7 +14,7 @@ begin
             id            int primary key auto_increment,
             first_name    varchar(255)                        not null,
             last_name     varchar(255),
-            email_address varchar(255)                        not null,
+            email_address varchar(255) unique                 not null,
             pincode       varchar(10)                         not null,
             age           int                                 not null,
             is_active     tinyint   default 1,
