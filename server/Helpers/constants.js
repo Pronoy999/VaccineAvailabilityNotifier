@@ -6,6 +6,8 @@ constants.DB_HOST_KEY = "DB_Host";
 constants.DB_DATABASE_NAME = "Database_name";
 constants.DB_USER_NAME = "Database_user_name";
 constants.DB_PASSWORD = "Database_password";
+constants.AWS_KEY_ID = "Key_ID";
+constants.AWS_SECRET_KEY = "Secret_Key";
 /**
  * HTTP Codes and messages.
  */
@@ -28,6 +30,7 @@ constants.INTERNAL_SERVER_ERROR_MESSAGE = "Internal Server Error";
  * SP Names
  */
 constants.SP_REGISTER_USER = "sp_registerUser";
+constants.SP_GET_ALL_USERS = "sp_GetAllUsers";
 
 /**
  * Column Constants
@@ -37,5 +40,29 @@ constants.LAST_NAME = "last_name";
 constants.EMAIL_ADDRESS = "email_address";
 constants.PINCODE = "pincode";
 constants.AGE = "age";
+
+constants.CENTERS = "centers";
+constants.SESSIONS = "sessions";
+constants.AVAILABLE_CAPACITY = "available_capacity";
+constants.MIN_AGE_LIMIT = "min_age_limit";
+constants.VACCINE_NAME = "vaccine";
+constants.SLOTS = "slots";
+
+constants.DESTINATION = "Destination";
+constants.TO_ADDRESS = "ToAddresses";
+constants.MESSAGE = "Message";
+constants.BODY = "Body";
+constants.HTML = "Html";
+constants.CHARSET = "Charset";
+constants.CHARSET_UTF8 = "UTF-8";
+constants.DATA = "Data";
+constants.TEXT = "Text";
+constants.SUBJECT = "Subject";
+constants.SOURCE_ADDRESS = "Source";
+
+/**
+ * API Constants.
+ */
+constants.CO_WIN_API_URL = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin";
 
 module.exports = constants;
