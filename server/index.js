@@ -5,10 +5,13 @@ const config = require("./Helpers/config");
 const routes = require('./routes');
 const logger = require("./Helpers/logger");
 const Worker = require("./Workers");
+const cors = require("cors");
 
 const app = express();
 
 app.use(express.json());
+app.use(cors());
+
 for (const route of routes) {
    app.use(route.pathPrefix, route.routingInstance);
 }
