@@ -65,4 +65,16 @@ constants.SOURCE_ADDRESS = "Source";
  */
 constants.CO_WIN_API_URL = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin";
 
+/**
+ * Email Messages
+ */
+constants.WELCOME_EMAIL = "<p>Hello %name,&nbsp;</p>\n" +
+   "<p>You have successfully registered with Co-Notifier.&nbsp;</p>\n" +
+   "<p>We will email you the moment a vaccine is available in your location.</p>\n" +
+   "<p>&nbsp;</p>\n" +
+   "<p>Regards,&nbsp;</p>\n" +
+   "<p>Co-Notifier</p>";
+
+constants.WELCOME_SUBJECT = "Thank you for Registering with Co-Notifier";
+
 module.exports = constants;
