@@ -6,12 +6,16 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "aws-sdk": "^2.900.0",
+    "axios": "^0.21.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^8.4.0",
     "express": "~4.16.1",
+    "moment": "^2.29.1",
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
+    "node-schedule": "^2.0.0",
     "validatorswithgenerators": "^1.0.3"
   }
 }
