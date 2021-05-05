@@ -369,6 +369,7 @@ input.checkbox:checked:after {
   width: 40px;
   height: 40px;
   bottom: -160px;
+  background: rgba(99, 98, 98, 0.25);
   -webkit-animation: square 20s infinite;
   -moz-animation: square 250s infinite;
   -o-animation: square 20s infinite;
@@ -522,7 +523,7 @@ input.checkbox:checked:after {
 
 /*-- responsive-design --*/
 @media(max-width:1440px) {
-  input[type="text"], input[type="email"], input[type="password"] {
+  input[type="text"], input[type="email"] {
     width: 94%;
   }
 }
@@ -578,7 +579,7 @@ input.checkbox:checked:after {
     width: 58%;
   }
 
-  input[type="text"], input[type="email"], input[type="password"] {
+  input[type="text"], input[type="email"] {
     width: 93%;
   }
 }
@@ -640,7 +641,7 @@ input.checkbox:checked:after {
     padding: 1.8em;
   }
 
-  input[type="text"], input[type="email"], input[type="password"] {
+  input[type="text"], input[type="email"] {
     width: 91%;
   }
 
