@@ -6,12 +6,12 @@ class Worker {
    }
 
    startVaccineNotifier() {
-      const notifier = new VaccineNotifier();
-      notifier.checkVaccineAvailability();
-      /*scheduler.scheduleJob("* * * * *", async () => {
+      /* const notifier = new VaccineNotifier();
+       notifier.checkVaccineAvailability();*/
+      scheduler.scheduleJob("* * * * *", async () => {
          const notifier = new VaccineNotifier();
-      await notifier.checkVaccineAvailability();
-      });*/
+         await notifier.checkVaccineAvailability();
+      });
    }
 }
 

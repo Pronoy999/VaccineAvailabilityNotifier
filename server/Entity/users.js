@@ -1,5 +1,6 @@
 const database = require("./../Services/databaseService");
 const constants = require("../Helpers/constants");
+const {notify} = require("./../Helpers/notificationHelper");
 
 class Users {
    constructor(firstName, lastName, email, pincode, age) {
@@ -17,6 +18,8 @@ class Users {
       try {
          const response = await database.runSp(constants.SP_REGISTER_USER, [this._firstName, this._lastName, this._email,
             this._pincode, this._age]);
+         const emailMessage = constants.WELCOME_EMAIL.replace("%name", this._firstName);
+         await notify(constants.WELCOME_SUBJECT, emailMessage, this._email, true);
          return response[0][0];
       } catch (e) {
          throw e;
