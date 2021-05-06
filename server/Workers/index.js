@@ -10,7 +10,7 @@ class Worker {
       /*const notifier = new VaccineNotifier();
       notifier.checkVaccineAvailability();*/
       logger.info("Workers Scheduled...");
-      scheduler.scheduleJob("* */6 * * *", async () => {
+      scheduler.scheduleJob("0 */6 * * *", async () => {
          const notifier = new VaccineNotifier();
          await notifier.checkVaccineAvailability();
       });
