@@ -64,10 +64,9 @@ class VaccineNotifier {
                   const capacity = session[constants.AVAILABLE_CAPACITY];
                   const minAgeLimit = session[constants.MIN_AGE_LIMIT];
                   vaccine = session[constants.VACCINE_NAME];
-                  const slots = session[constants.SLOTS];
-                  slotsArray.push(slots);
+                  /* const slots = session[constants.SLOTS];
+                   slotsArray.push(slots);*/
                   if (capacity > 0 && age > minAgeLimit) {
-                     const vaccine = session[constants.VACCINE_NAME];
                      const slots = session[constants.SLOTS];
                      slotsArray.push(slots);
                   } else {
