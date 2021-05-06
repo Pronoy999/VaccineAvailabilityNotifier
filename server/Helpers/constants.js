@@ -75,6 +75,12 @@ constants.WELCOME_EMAIL = "<p>Hello %name,&nbsp;</p>\n" +
    "<p>Regards,&nbsp;</p>\n" +
    "<p>Co-Notifier</p>";
 
+constants.VACCINE_AVAILABLE_SLOTS_MESSAGE = "<p>Hello %name ,&nbsp;</p>" +
+   "<p>Vaccine %vaccine is available at your location on these slots:</p>" +
+   "<p>%times</p>" +
+   "<p>Regards,&nbsp;</p>" +
+   "<p>Co-Notifier.&nbsp;</p>";
+
 constants.WELCOME_SUBJECT = "Thank you for Registering with Co-Notifier";
 
 module.exports = constants;
