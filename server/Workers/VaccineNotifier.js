@@ -44,7 +44,11 @@ class VaccineNotifier {
       try {
          const today = moment().format("DD-MM-YYYY");
          const url = constants.CO_WIN_API_URL + "?pincode=" + pincode + "&date=" + today;
-         const response = await axios.get(url);
+         const response = await axios.get(url, {
+            headers: {
+               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 Edg/90.0.818.51"
+            }
+         });
          const centers = response.data[constants.CENTERS];
          if (centers.length > 0) {
             let slotsArray = [];
