@@ -6,5 +6,5 @@ To know whether vaccine is available at your location for your, you needed to ch
 So I just automated that process, you register at our system and we will email you the moment when there is a vaccine. 
 
 # Co-Notifier
-http://15.206.242.223
+
 
